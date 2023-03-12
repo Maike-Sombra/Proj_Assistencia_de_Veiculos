@@ -1,0 +1,257 @@
+:root {
+  --background_clean: rgb(243, 243, 115);
+  --cor_da_empresa: rgb(12, 105, 172);
+  --cor_aux: rgb(3, 151, 20);
+  --border_color: goldenrod;
+}
+
+#texto_inicio {
+  padding: 2rem;
+  background-color: var(--background_clean);
+}
+#nome_empresa {
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--cor_aux);
+  text-shadow: 2px 2px var(--cor_da_empresa);
+  margin-bottom: 0.5rem;
+}
+.descricao {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--cor_da_empresa);
+}
+.nome_pagina {
+  font-size: 35px;
+  color: var(--cor_da_empresa);
+  text-shadow: 1px 1px black;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#cards_servicos {
+  display: flex;
+}
+.card_servico {
+  display: block;
+  width: 25%;
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 15px black;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 5rem;
+}
+.card_servico:hover {
+  border: 2px solid var(--cor_da_empresa);
+  transform: scale(1);
+  box-shadow: 0 5px 15px var(--cor_aux);
+  cursor: pointer;
+}
+#card_vermais {
+  display: block;
+  width: 25%;
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 15px black;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: var(--background_clean);
+  margin-bottom: 5rem;
+}
+.link_redire {
+  text-decoration: none;
+}
+#card_vermais:hover {
+  border: 2px solid var(--cor_da_empresa);
+  transform: scale(1);
+  box-shadow: 0 5px 15px var(--cor_aux);
+  cursor: pointer;
+}
+h3.nome_servico {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: 1.3rem;
+  margin-top: 0.2rem;
+  color: var(--cor_aux);
+}
+h3#nome_vermais {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: 1.3rem;
+  margin-top: 0.2rem;
+  color: var(--cor_aux);
+}
+.card_servico img {
+  width: 60%;
+  height: 76%;
+  display: block;
+  margin: auto;
+  margin-top: 0.2rem;
+  align-items: center;
+  align-content: center;
+}
+i.bi-plus-circle-dotted {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0.2rem;
+  font-size: 165px;
+  color: var(--cor_da_empresa);
+  text-shadow: 1px 1px black;
+}
+#card_vermais a {
+  text-decoration: none;
+}
+.titulo_agendar {
+  font-size: 35px;
+  color: var(--cor_aux);
+  text-shadow: 1px 1px black;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+#agendar {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  /*text-decoration: none;*/
+  border-top: 6px solid;
+  border-bottom: 6px solid;
+  border-image: linear-gradient(
+    to right,
+    var(--cor_da_empresa) 5%,
+    var(--cor_aux) 100%
+  );
+  border-image-slice: 1;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+.botao_agendar {
+  margin-left: 0.5rem;
+  box-shadow: inset 0px 1px 0px 0px var(--background_clean);
+  background: linear-gradient(
+    to bottom,
+    var(--cor_da_empresa) 5%,
+    var(--cor_aux) 100%
+  );
+
+  background-color: var(--background_clean);
+  border-radius: 6px;
+  border: 2px solid var(--border_color);
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 60px 20px 60px;
+  text-decoration: none;
+}
+i.bi-calendar-date {
+  font-size: 22px;
+}
+#contatos {
+  text-align: center;
+  border: 0.4rem outset var(--cor_da_empresa);
+  outline: 0.5rem solid var(--background_clean);
+  box-shadow: 0 0 0 1rem var(--cor_aux);
+  border-radius: 12px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5rem;
+  font: bold 1rem sans-serif;
+  padding: 20px;
+}
+.descricao a {
+  text-decoration: none;
+}
+#avaliacao {
+  text-align: center;
+  border: 0.4rem outset var(--cor_da_empresa);
+  outline: 0.5rem solid var(--background_clean);
+  box-shadow: 0 0 0 1rem var(--cor_aux);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font: bold 1rem sans-serif;
+}
+#titulo_avaliacao {
+  font-size: 25px;
+  color: var(--cor_da_empresa);
+  text-shadow: 2px 2px black;
+}
+.bi-hand-thumbs-up-fill {
+  font-size: 35px;
+  color: var(--cor_da_empresa);
+  text-shadow: 2px 2px black;
+}
+.bi-hand-thumbs-down-fill {
+  font-size: 35px;
+  color: var(--cor_da_empresa);
+  text-shadow: 2px 2px black;
+}
+#frase_avaliacao {
+  font-size: 20px;
+  color: var(--cor_aux);
+  padding: 1.2rem;
+}
+/*
+section#cards_produtos {
+  display: flex;
+}
+.card_produto {
+  display: block;
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 15px black;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  align-content: center;
+}
+.card_produto:hover {
+  box-shadow: inset 50px 0 black 0;
+  border: 5px solid var(--cor_da_empresa);
+  color: white;
+}
+.card_produto img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  justify-content: center;
+}
+h3.nome_produto {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: 1.3rem;
+  margin-top: 0.2rem;
+  color: var(--cor_aux);
+}
+
+div#ver_mais {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+div#ver_mais a {
+  color: var(--cor_aux);
+  text-decoration: none;
+  margin: 0.8rem 2rem;
+}*/

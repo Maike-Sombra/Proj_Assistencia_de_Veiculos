@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/padrao_telas.css" />
+    <link rel="stylesheet" href="./css/servicos.css" />
+    <title>SERVIÇOS</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="ul_menu">
+          <li class="item_img">
+            <img
+              class="logo_empresa"
+              src="./imagens/logo_empresa.png"
+              alt="logo_empresa"
+            />
+          </li>
+          <a href="index.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">HOME</p>
+            </li>
+          </a>
+          <a href="servicos.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">SERVIÇOS</p>
+            </li>
+          </a>
+          <a href="agendamento.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">AGENDAMENTO</p>
+            </li>
+          </a>
+          <a href="pagamento.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">PAGAMENTO</p>
+            </li>
+          </a>
+          <a href="login.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">LOGIN</p>
+            </li>
+          </a>
+          <a href="cadastro.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">CADASTRO</p>
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="nome_pagina">Serviços para o seu Veículo</h1>
+    <section class="servicos" id="manutencao_preventiva">
+      <div class="imagem_servico">
+        <img
+          class="img-servico"
+          src="./imagens/manutencao_preventiva.png"
+          alt="manutencao_preventiva"
+        />
+      </div>
+      <div class="servico">
+        <h2 class="nome_servico">Manuteção Preventiva</h2>
+        <p class="descricao_servico">
+          - Revisão de todos os sistemas do veículo como freios, suspensão,
+          direção, ar-condicionado, e outros sistemas em geral.<br />
+        </p>
+      </div>
+      <div class="valor">
+        <p class="orcamento">Orçamento Base a partir de</p>
+        <p class="valor_unitario">R$ 400,00</p>
+        <a href="./pagamento.html?tipo_servico=manutencao_preventiva">
+          <button class="botao_pagar">
+            <i class="bi bi-cash-coin">&nbsp;</i>Pagar
+          </button>
+        </a>
+        <a href="./agendamento.html?tipo_servico=manutencao_preventiva">
+          <button class="botao_agendar">
+            <i class="bi bi-calendar-date">&nbsp;</i>Agendar
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="servicos" id="servico_reparo">
+      <div class="imagem_servico">
+        <img
+          class="img-servico"
+          src="./imagens/reparo_pecas2.png"
+          alt="reparo_de_pecas"
+        />
+      </div>
+      <div class="servico">
+        <h2 class="nome_servico">Reparo de Peças</h2>
+        <p class="descricao_servico">
+          - Troca ou concerto de peças danificadas, como bateria, pneus,
+          amortecedores, e outras peças em geral.<br />
+        </p>
+      </div>
+      <div class="valor">
+        <p class="orcamento">Orçamento Base a partir de</p>
+        <p class="valor_unitario">R$ 800,00</p>
+        <a href="./pagamento.html?tipo_servico=reparo_de_pecas">
+          <button class="botao_pagar">
+            <i class="bi bi-cash-coin">&nbsp;</i>Pagar
+          </button>
+        </a>
+        <a href="./agendamento.html?tipo_servico=reparo_de_pecas">
+          <button class="botao_agendar">
+            <i class="bi bi-calendar-date">&nbsp;</i>Agendar
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="servicos" id="servico_alinhamento">
+      <div class="imagem_servico">
+        <img
+          class="img-servico"
+          src="./imagens/alinhamento_balanceamneto.png"
+          alt="alinhamento_balanceamneto"
+        />
+      </div>
+      <div class="servico">
+        <h2 class="nome_servico">Alinhamento e Balanceamento</h2>
+        <p class="descricao_servico">
+          - Garante a estabilidade e segurança do veículo ao dirigir, além de
+          melhorar a durabilidade das rodas.<br />
+        </p>
+      </div>
+      <div class="valor">
+        <p class="orcamento">Orçamento Base a partir de</p>
+        <p class="valor_unitario">R$ 150,00</p>
+        <a href="./pagamento.html?tipo_servico=alinhamento_e_balanceamento">
+          <button class="botao_pagar">
+            <i class="bi bi-cash-coin">&nbsp;</i>Pagar
+          </button>
+        </a>
+        <a href="./agendamento.html?tipo_servico=alinhamento_e_balanceamento">
+          <button class="botao_agendar">
+            <i class="bi bi-calendar-date">&nbsp;</i>Agendar
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="servicos" id="servico_oleo">
+      <div class="imagem_servico">
+        <img
+          class="img-servico"
+          src="./imagens/troca_oleo.png"
+          alt="troca_de_oleo"
+        />
+      </div>
+      <div class="servico">
+        <h2 class="nome_servico">Troca de Óleo</h2>
+        <p class="descricao_servico">
+          - Mantém o motor saudável e evita problemas futuros.<br />
+        </p>
+      </div>
+      <div class="valor">
+        <p class="orcamento">Orçamento Base a partir de</p>
+        <p class="valor_unitario">R$ 150,00</p>
+        <a href="./pagamento.html?tipo_servico=troca_de_oleo">
+          <button class="botao_pagar">
+            <i class="bi bi-cash-coin">&nbsp;</i>Pagar
+          </button>
+        </a>
+        <a href="./agendamento.html?tipo_servico=troca_de_oleo">
+          <button class="botao_agendar">
+            <i class="bi bi-calendar-date">&nbsp;</i>Agendar
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="servicos" id="servico_funilaria">
+      <div class="imagem_servico">
+        <img
+          class="img-servico"
+          src="./imagens/funilaria.png"
+          alt="funilaria"
+        />
+      </div>
+      <div class="servico">
+        <h2 class="nome_servico">Funilaria</h2>
+        <p class="descricao_servico">
+          - Concerto ou reparo de danos na carroceria, bem como personalização
+          do veículo e da pintura.<br />
+        </p>
+      </div>
+      <div class="valor">
+        <p class="orcamento">Orçamento Base a partir de</p>
+        <p class="valor_unitario">R$ 1.000,00</p>
+        <a href="./pagamento.html?tipo_servico=funilaria">
+          <button class="botao_pagar">
+            <i class="bi bi-cash-coin">&nbsp;</i>Pagar
+          </button>
+        </a>
+        <a href="./agendamento.html?tipo_servico=funilaria">
+          <button class="botao_agendar">
+            <i class="bi bi-calendar-date">&nbsp;</i>Agendar
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="servicos" id="servico_eletronico">
+      <div class="imagem_servico">
+        <img
+          class="img-servico"
+          src="./imagens/diagnostico_eletronico2.png"
+          alt="diagnostico_eletronico"
+        />
+      </div>
+      <div class="servico">
+        <h2 class="nome_servico">Diagnóstico Eletrônico</h2>
+        <p class="descricao_servico">
+          - Utilização de tecnologia avançada para identificar problemas no
+          sistema eletrônico do veículo.<br />
+        </p>
+      </div>
+      <div class="valor">
+        <p class="orcamento">Orçamento Base a partir de</p>
+        <p class="valor_unitario">R$ 100,00</p>
+        <a href="./pagamento.html?tipo_servico=diagnostico_eletronico">
+          <button class="botao_pagar">
+            <i class="bi bi-cash-coin">&nbsp;</i>Pagar
+          </button>
+        </a>
+        <a href="./agendamento.html?tipo_servico=diagnostico_eletronico">
+          <button class="botao_agendar">
+            <i class="bi bi-calendar-date">&nbsp;</i>Agendar
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="servicos" id="servico_acessorio">
+      <div class="imagem_servico">
+        <img
+          class="img-servico"
+          src="./imagens/instalacao_acessorios.png"
+          alt="instalacao_acessorios"
+        />
+      </div>
+      <div class="servico">
+        <h2 class="nome_servico">Instalação de acessórios</h2>
+        <p class="descricao_servico">
+          - Instalação de equipamentos adicionais, como GPS, câmara de ré, som,
+          entre outros equipamentos em geral.<br />
+        </p>
+      </div>
+      <div class="valor">
+        <p class="orcamento">Orçamento Base a partir de</p>
+        <p class="valor_unitario">R$ 300,00</p>
+        <a href="./pagamento.html?tipo_servico=instalacao_acessorios">
+          <button class="botao_pagar">
+            <i class="bi bi-cash-coin">&nbsp;</i>Pagar
+          </button>
+        </a>
+        <a href="./agendamento.html?tipo_servico=instalacao_acessorios">
+          <button class="botao_agendar">
+            <i class="bi bi-calendar-date">&nbsp;</i>Agendar
+          </button>
+        </a>
+      </div>
+    </section>
+    <footer class="rodape">
+      <ul class="cards_rodape">
+        <a href="index.html">
+          <li class="item_rodape">
+            <i class="bi bi-house-fill"></i>
+            <p class="nome_item_rodape">HOME</p>
+          </li>
+        </a>
+        <a href="instagram.com">
+          <li class="item_rodape">
+            <i class="bi bi-instagram"></i>
+            <p class="nome_item_rodape">PERFIL</p>
+          </li>
+        </a>
+        <a href="googlemaps.com">
+          <li class="item_rodape">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p class="nome_item_rodape">LOCALIZAÇÃO</p>
+          </li>
+        </a>
+        <a href="sobrenos.html">
+          <li class="item_rodape">
+            <i class="bi bi-info-circle"></i>
+            <p class="nome_item_rodape">SOBRE NÓS</p>
+          </li>
+        </a>
+      </ul>
+    </footer>
+    <script src="./js/script_servicos.js"></script>
+  </body>
+</html>

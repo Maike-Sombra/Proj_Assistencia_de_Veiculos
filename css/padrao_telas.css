@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background_clean: rgb(243, 243, 115);
+  --cor_da_empresa: rgb(12, 105, 172);
+  --cor_aux: rgb(3, 151, 20);
+  --border_color: goldenrod;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+.cabecalho {
+  width: 100%;
+  background-color: black;
+  border-left: 1px solid var(--border_color);
+  border-right: 1px solid var(--border_color);
+}
+
+.ul_menu {
+  display: flex;
+  justify-content: space-around;
+  align-content: baseline;
+  list-style: none;
+  text-align: center;
+}
+.item_cabecalho {
+  border: 5px solid var(--border_color);
+  padding: 2rem;
+  width: 12rem;
+  text-align: center;
+  background-color: var(--cor_aux);
+}
+.item_img {
+  width: 10rem;
+  align-items: center;
+  align-content: center;
+}
+.logo_empresa {
+  width: 90%;
+  margin-left: 0.5rem;
+  margin-top: 0.1rem;
+  height: 90%;
+}
+.ul_menu a {
+  text-decoration: none;
+}
+.nome_item_cabecalho {
+  font-size: 16px;
+  color: white;
+  font-weight: 900;
+  text-shadow: 1px 1px var(--cor_da_empresa);
+  text-align: center;
+}
+.rodape {
+  background-color: var(--background_clean);
+  margin-top: 4rem;
+}
+.cards_rodape {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  list-style: none;
+  text-align: center;
+}
+.cards_rodape a {
+  text-decoration: none;
+}
+.item_rodape {
+  padding: 1rem;
+}
+.nome_item_rodape {
+  font-size: 16px;
+  color: var(--cor_aux);
+  font-weight: 800;
+  text-shadow: 1px 1px var(--cor_da_empresa);
+}
+i.bi-house-fill {
+  font-size: 60px;
+  color: var(--cor_da_empresa);
+}
+i.bi-instagram {
+  font-size: 60px;
+  color: var(--cor_da_empresa);
+}
+i.bi-geo-alt-fill {
+  font-size: 60px;
+  color: var(--cor_da_empresa);
+}
+i.bi-info-circle {
+  font-size: 60px;
+  color: var(--cor_da_empresa);
+}

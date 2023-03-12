@@ -1,0 +1,150 @@
+:root {
+  --background_clean: rgb(243, 243, 115);
+  --cor_da_empresa: rgb(12, 105, 172);
+  --cor_aux: rgb(3, 151, 20);
+  --border_color: goldenrod;
+}
+#secao_login {
+  width: 60%;
+  margin: 2rem auto;
+  background-color: rgb(29, 29, 29);
+  box-shadow: 0 10px 30px 0 var(--cor_da_empresa);
+  transition: 0.3s;
+}
+#secao_login:hover {
+  box-shadow: 0 6px 10px 0 var(--cor_aux);
+}
+#secao_login img {
+  display: flex;
+  width: 45%;
+  justify-content: center;
+  margin: auto;
+  border-radius: 1rem;
+}
+.nome_empresa {
+  font-size: 40px;
+  color: var(--cor_aux);
+  text-shadow: 2px 2px var(--cor_da_empresa);
+  text-align: center;
+  padding: 1.5rem;
+}
+.login_senha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.login {
+  margin-left: 2.4rem;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0.8rem 0 0.8rem 0;
+  color: white;
+  text-shadow: 3px 2px var(--cor_da_empresa);
+}
+
+.input {
+  padding: 0.5rem;
+  margin: auto;
+  font-size: 25px;
+  width: 90%;
+  padding: 0.9rem 0 0.9rem 0;
+  border: 2px solid var(--cor_da_empresa);
+  text-align: center;
+}
+
+input:focus {
+  outline: 0;
+}
+
+::-webkit-input-placeholder {
+  color: var(--cor_da_empresa);
+  padding: 2rem;
+  text-align: center;
+}
+
+input[type="email"]:focus {
+  border: 3px solid var(--cor_aux);
+}
+input[type="password"]:focus {
+  border: 3px solid var(--cor_aux);
+}
+
+#botao_login {
+  box-shadow: inset 0px 1px 0px 0px var(--background_clean);
+  background: linear-gradient(
+    to bottom,
+    var(--cor_da_empresa) 5%,
+    var(--cor_aux) 100%
+  );
+  background-color: var(--background_clean);
+  border-radius: 6px;
+  border: 2px solid var(--border_color);
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 60px 20px 60px;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+#botao_login:active {
+  position: relative;
+  top: 1px;
+}
+#alerta {
+  font-size: 20px;
+  color: red;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem;
+}
+#alerta a {
+  font-size: 20px;
+  border: 2px solid var(--cor_aux);
+  color: var(--cor_da_empresa);
+  text-decoration: none;
+  text-align: center;
+}
+
+/*estilização da secção = mensagem_ok*/
+
+.card_ok {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  width: 70%;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(
+    to bottom,
+    var(--cor_da_empresa) 5%,
+    var(--cor_aux) 100%
+  );
+  border: var(--border_color) 3px solid;
+  border-radius: 0.5rem;
+  z-index: 999;
+  font-size: 20px;
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 30px 0 var(--cor_da_empresa);
+}
+
+.card_ok:hover {
+  transform: scale(0.99);
+}

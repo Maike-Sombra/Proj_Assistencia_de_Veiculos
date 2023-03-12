@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/padrao_telas.css" />
+    <link rel="stylesheet" href="./css/pagamento.css" />
+    <title>PAGAMENTO</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="ul_menu">
+          <li class="item_img">
+            <img
+              class="logo_empresa"
+              src="./imagens/logo_empresa.png"
+              alt="logo_empresa"
+            />
+          </li>
+          <a href="index.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">HOME</p>
+            </li>
+          </a>
+          <a href="servicos.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">SERVIÇOS</p>
+            </li>
+          </a>
+          <a href="agendamento.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">AGENDAMENTO</p>
+            </li>
+          </a>
+          <a href="pagamento.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">PAGAMENTO</p>
+            </li>
+          </a>
+          <a href="login.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">LOGIN</p>
+            </li>
+          </a>
+          <a href="cadastro.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">CADASTRO</p>
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <section id="secao_pagar">
+      <h1 class="nome_pagina">Pagamento</h1>
+      <form action="">
+        <fieldset class="fieldset">
+          <legend class="legend">Confirmação das informações de Login</legend>
+          <label for="nome" class="pagamento">Nome: </label>
+          <input
+            type="text"
+            class="input"
+            id="nome"
+            required
+            placeholder="Digite seu nome"
+          />
+          <label for="cpf" class="pagamento">CPF: </label>
+          <input
+            type="text"
+            class="input"
+            id="cpf"
+            required
+            placeholder="Digite seu CPF"
+          />
+          <label for="email" class="pagamento">E-mail: </label>
+          <input
+            type="email"
+            class="input"
+            id="email"
+            required
+            placeholder="Digite seu e-mail"
+          />
+          <label for="senha" class="pagamento">Senha: </label>
+          <input
+            type="password"
+            class="input"
+            id="senha"
+            required
+            placeholder="Digite sua senha"
+          />
+          <br /><br />
+          <p id="alerta">
+            <strong>
+              Atenção: Se ainda não é cadastrado. Cadastre-se aqui >>
+              <a href="cadastro.html">Cadastro.</a></strong
+            >
+          </p>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend class="legend">Tipo de Serviço e Forma de Pagamento</legend>
+          <label for="tipo_servico" class="pagamento"
+            >Selecione o tipo de Serviço que deseja: <br
+          /></label>
+          <select name="tipo_servico" id="tipo_servico" required>
+            <option value="manutencao_preventiva">Manutenção Preventiva</option>
+            <option value="reparo_de_pecas">Reparo de Peças</option>
+            <option value="alinhamento_e_balanceamento">
+              Alinhamento e Balanceamento
+            </option>
+            <option value="troca_de_oleo">Troca de Óleo</option>
+            <option value="funilaria">Funilaria</option>
+            <option value="diagnostico_eletronico">
+              Diagnóstico Eletrônico
+            </option>
+            <option value="instalacao_acessorios">
+              Instalação de Acessórios
+            </option></select
+          ><br /><br />
+
+          <label for="valor" class="pagamento">Valor: </label>
+          <input
+            type="text"
+            value="R$ 000,00"
+            id="valor"
+            class="input"
+            readonly
+          /><br /><br />
+          <label for="pay_mod" class="pagamento"
+            >Selecione a forma de pagamento</label
+          ><br />
+          <select name="pay_mod" id="pay_mod" required>
+            <option value="pix">PIX</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+            <option value="boleto">Boleto</option>
+          </select>
+        </fieldset>
+        <br />
+
+        <button class="botao_pagar">
+          <i class="bi bi-cash-coin">&nbsp;</i>Realizar Pagamento
+        </button>
+      </form>
+      <div id="mensagem_ok" class="mensagem_ok"></div>
+    </section>
+    <footer class="rodape">
+      <ul class="cards_rodape">
+        <a href="index.html">
+          <li class="item_rodape">
+            <i class="bi bi-house-fill"></i>
+            <p class="nome_item_rodape">HOME</p>
+          </li>
+        </a>
+        <a href="instagram.com">
+          <li class="item_rodape">
+            <i class="bi bi-instagram"></i>
+            <p class="nome_item_rodape">PERFIL</p>
+          </li>
+        </a>
+        <a href="googlemaps.com">
+          <li class="item_rodape">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p class="nome_item_rodape">LOCALIZAÇÃO</p>
+          </li>
+        </a>
+        <a href="sobrenos.html">
+          <li class="item_rodape">
+            <i class="bi bi-info-circle"></i>
+            <p class="nome_item_rodape">SOBRE NÓS</p>
+          </li>
+        </a>
+      </ul>
+    </footer>
+
+    <script src="./js/script_pagamento.js"></script>
+  </body>
+</html>

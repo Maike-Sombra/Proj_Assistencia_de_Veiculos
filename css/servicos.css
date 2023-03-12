@@ -1,0 +1,136 @@
+:root {
+  --background_clean: rgb(243, 243, 115);
+  --cor_da_empresa: rgb(12, 105, 172);
+  --cor_aux: rgb(3, 151, 20);
+  --border_color: goldenrod;
+}
+.nome_pagina {
+  font-size: 40px;
+  color: var(--cor_aux);
+  text-shadow: 2px 2px var(--cor_da_empresa);
+  text-align: center;
+  padding: 1.5rem;
+}
+.servicos {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: rgb(29, 29, 29);
+  width: 80%;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px var(--cor_aux);
+  margin-bottom: 2rem;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.servicos:hover {
+  transform: scale(1.07);
+}
+.servico_hover {
+  transform: scale(1.07);
+}
+.imagem_servico,
+.servico,
+.valor {
+  width: 40%;
+}
+.img-servico {
+  margin: 0.5rem;
+  margin-left: 1rem;
+  height: 250px;
+  width: 90%;
+}
+.servico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5rem;
+}
+.nome_servico {
+  font-size: 35px;
+  font-weight: 800;
+  padding: 0.4rem;
+  margin: 1.1rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 3px var(--cor_da_empresa);
+}
+.descricao_servico {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 0.4rem;
+  text-align: center;
+  color: white;
+}
+.valor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 1.5rem;
+  padding: 1rem;
+}
+
+.orcamento {
+  font-size: 15px;
+  padding-top: 1.1rem;
+  color: white;
+}
+.valor_unitario {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
+  color: var(--cor_aux);
+  border: 2px solid white;
+}
+.botao_pagar {
+  box-shadow: inset 0px 1px 0px 0px var(--background_clean);
+  background: linear-gradient(
+    to bottom,
+    var(--cor_da_empresa) 5%,
+    var(--cor_aux) 100%
+  );
+  background-color: var(--background_clean);
+  border-radius: 6px;
+  border: 2px solid var(--border_color);
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 60px 10px 60px;
+  text-decoration: none;
+  margin: auto;
+  width: 80%;
+}
+.botao_agendar {
+  box-shadow: inset 0px 1px 0px 0px var(--background_clean);
+  background: linear-gradient(
+    to bottom,
+    var(--cor_da_empresa) 5%,
+    var(--cor_aux) 100%
+  );
+  background-color: var(--background_clean);
+  border-radius: 6px;
+  border: 2px solid var(--border_color);
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 60px 10px 60px;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 0.3rem;
+  width: 80%;
+}
+.botao_pagar:active {
+  position: relative;
+  top: 1px;
+}
+.botao_agendar:active {
+  position: relative;
+  top: 1px;
+}

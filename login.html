@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/padrao_telas.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="ul_menu">
+          <li class="item_img">
+            <img
+              class="logo_empresa"
+              src="./imagens/logo_empresa.png"
+              alt="logo_empresa"
+            />
+          </li>
+          <a href="index.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">HOME</p>
+            </li>
+          </a>
+          <a href="servicos.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">SERVIÇOS</p>
+            </li>
+          </a>
+          <a href="agendamento.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">AGENDAMENTO</p>
+            </li>
+          </a>
+          <a href="pagamento.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">PAGAMENTO</p>
+            </li>
+          </a>
+          <a href="login.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">LOGIN</p>
+            </li>
+          </a>
+          <a href="cadastro.html">
+            <li class="item_cabecalho">
+              <p class="nome_item_cabecalho">CADASTRO</p>
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <section id="secao_login">
+      <h1 class="nome_empresa">BRASILEIRAGEM CAR</h1>
+      <img src="./imagens/logo_empresa.png" alt="logo da empresa" /><br /><br />
+      <div id="mensagem_ok" class="mensagem_ok"></div>
+      <div class="login_senha">
+        <form action="">
+          <label for="meu_input1" class="login">Login: </label>
+          <input
+            id="meu_input1"
+            type="email"
+            placeholder="Digite seu e-mail"
+            class="input"
+            required
+          /><br />
+          <label class="login" for="meu_input2">Senha: </label>
+          <input
+            class="input"
+            type="password"
+            id="meu_input2"
+            placeholder="Digite sua senha"
+            required
+          />
+          <br />
+          <button id="botao_login" type="submit">REALIZAR LOGIN</button>
+        </form>
+      </div>
+      <div>
+        <br />
+        <p id="alerta">
+          <strong>
+            Atenção: Se ainda não é cadastrado. Cadastre-se aqui >>
+            <a href="cadastro.html">Cadastro.</a></strong
+          >
+        </p>
+      </div>
+    </section>
+    <footer class="rodape">
+      <ul class="cards_rodape">
+        <a href="index.html">
+          <li class="item_rodape">
+            <i class="bi bi-house-fill"></i>
+            <p class="nome_item_rodape">HOME</p>
+          </li>
+        </a>
+        <a href="instagram.com">
+          <li class="item_rodape">
+            <i class="bi bi-instagram"></i>
+            <p class="nome_item_rodape">PERFIL</p>
+          </li>
+        </a>
+        <a href="googlemaps.com">
+          <li class="item_rodape">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p class="nome_item_rodape">LOCALIZAÇÃO</p>
+          </li>
+        </a>
+        <a href="sobrenos.html">
+          <li class="item_rodape">
+            <i class="bi bi-info-circle"></i>
+            <p class="nome_item_rodape">SOBRE NÓS</p>
+          </li>
+        </a>
+      </ul>
+    </footer>
+    <script src="./js/script_login.js"></script>
+  </body>
+</html>
